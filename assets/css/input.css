@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS HEX */
+/*--black: #0a0908ff;
+--moonstone: #63b0cdff;
+--pigment-green: #52aa5eff;
+--silver: #c4b1aeff;
+--space-cadet: #171738ff;*/
+
+body{
+	background-image: url("/static/images/night_city.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}

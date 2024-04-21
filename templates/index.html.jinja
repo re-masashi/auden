@@ -1,0 +1,147 @@
+{% extends "base.html.jinja" %}
+{% block title %}Feed{% endblock %}
+{% block content %}
+    <h1 class="text-5xl font-extrabold text-center py-2">Posts</h1>
+    <p class="important text-center">
+      Welcome to my awesome homepage. 🤫🧏🏻‍♂️
+      <div class="flex flex-col mx-20 my-4 items-center gap-10" feed>
+          <div class="flex flex-col w-1/2 bg-black/40 p-3 rounded-xl" post>
+            <div class="flex flex-row items-center gap-2 font-black text-lg" account>
+                <img src="https://wallpapercave.com/wp/wp5609850.jpg" class="h-12 w-12 rounded-full">
+                PunBible
+                <button class="border border-white p-1 rounded-md text-xs font-mono font-thin">Follow</button>
+            </div>
+            <div class="p-4 pb-0 w-full" media>
+                <img src="https://wallpapercave.com/wp/wp5609850.jpg" class="rounded-md">
+            </div>
+            <div class="flex flex-row items-center p-4 gap-3" controls>
+                <button class="flex flex-col items-center gap-1">
+                    <i class="material-icons scale-125">favorite</i>
+                    <span>2M</span>
+                </button>
+                <button class="flex flex-col items-center justify-center gap-1">
+                    <i class="material-icons scale-125">comment</i>
+                    <span>20K</span>
+                </button>
+                <button class="flex flex-col items-center justify-center gap-1">
+                    <i class="material-icons scale-125">share</i>
+                    <span>3M</span>
+                </button>
+                <button class="ml-auto flex flex-col items-center justify-center gap-1">
+                    <i class="material-icons scale-125">loop</i>
+                    <span>1K</span>
+                </button>
+            </div>
+            <p class="px-4 pb-2" caption>
+                New Account. KaChow!
+                <span class="rounded-full bg-blue-800 px-1 p-0.5 text-xs">#new</span>
+            </p>
+            <p class="font-mono text-center text-sm p-2 bg-black/50" post-date>
+                Posted on <span>1st April, 2098</span>
+            </p>
+            <div top-comment class="p-2">
+                <h2 class="py-1 font-semibold">Top Comment</h2>
+                <div class="flex flex-row bg-white/20 p-2 rounded-md pl-2">
+                    <img src="https://th.wallhaven.cc/small/x6/x6wjkv.jpg" class="rounded-full w-9 h-9" />
+                    <div class="flex flex-col px-2">
+                        <h3 class="text-xs">@comment_bot</h3>
+                        <p class="text-sm">
+                            It shows a picture of your own pfp!
+                            It shows a picture of your own pfp!
+                            It shows a picture of your own pfp!
+                            It shows a picture of your own pfp!
+                            It shows a picture of your own pfp!
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col w-1/2 bg-black/40 p-3 rounded-xl" post>
+            <div class="flex flex-row items-center gap-2 font-black text-lg" account>
+                <img src="https://wallpapercave.com/wp/wp5609850.jpg" class="h-12 w-12 rounded-full">
+                PunBible
+                <button class="border border-white p-1 rounded-md text-xs font-mono font-thin">Follow</button>
+            </div>
+            <div class="p-4 pb-0 w-full" media>
+                <img src="https://w.wallhaven.cc/full/72/wallhaven-72yzje.jpg" class="rounded-md">
+            </div>
+            <div class="flex flex-row items-center p-4 gap-3" controls>
+                <button><i class="material-icons scale-125">favorite</i></button>
+                <button><i class="material-icons scale-125">comment</i></button>
+                <button><i class="material-icons scale-125">share</i></button>
+                <button class="ml-auto"><i class="material-icons scale-125">loop</i></button>
+            </div>
+            <p class="px-4 pb-2" caption>
+                Magic!
+                <span class="rounded-full bg-yellow-800 px-1 p-0.5 text-xs">#beachvibes</span>
+                <span class="rounded-full bg-green-800 px-1 p-0.5 text-xs">#peace</span>
+            </p>
+            <p class="font-mono text-center text-sm p-2 bg-black/50" post-date>
+                Posted on <span>3st April, 1098</span>
+            </p>
+            <div comments class="p-2 flex flex-col gap-2">
+                <div class="flex flex-row bg-white/20 p-2 rounded-md pl-2">
+                    <img src="https://th.wallhaven.cc/small/x6/x6wjkv.jpg" class="rounded-full w-9 h-9" />
+                    <div class="flex flex-col px-2">
+                        <h3 class="text-xs">@comment_bot</h3>
+                        <p class="text-sm">
+                            WoW
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white/20 p-2 rounded-md pl-2">
+                    <img src="https://th.wallhaven.cc/small/x6/x6wjkv.jpg" class="rounded-full w-9 h-9" />
+                    <div class="flex flex-col px-2">
+                        <h3 class="text-xs">@comment_bot</h3>
+                        <p class="text-sm">
+                            WoW
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white/20 p-2 rounded-md pl-2">
+                    <img src="https://th.wallhaven.cc/small/x6/x6wjkv.jpg" class="rounded-full w-9 h-9" />
+                    <div class="flex flex-col px-2">
+                        <h3 class="text-xs">@comment_bot</h3>
+                        <p class="text-sm">
+                            WoW
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col w-1/2 bg-black/40 p-3 rounded-xl" post>
+            <div class="flex flex-row items-center gap-2 font-black text-lg" account>
+                <img src="https://wallpapercave.com/wp/wp5609850.jpg" class="h-12 w-12 rounded-full">
+                PunBible
+                <button class="border border-white p-1 rounded-md text-xs font-mono font-thin">Follow</button>
+            </div>
+            <div class="p-4 pb-0 w-full" media style="
+                background-image: url('https://w.wallhaven.cc/full/72/wallhaven-72yzje.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                filter: grayscale(-10%) sepia(-50%);
+            ">
+                <div class="flex flex-row h-48 gap-10 items-center justify-center">
+                    <button><i class="material-icons scale-[175%]">pause</i></button>
+                </div>
+                <audio src="" hidden>
+                </audio>
+            </div>
+            <div class="flex flex-row items-center p-4 gap-3" controls>
+                <button><i class="material-icons scale-125">favorite</i></button>
+                <button><i class="material-icons scale-125">comment</i></button>
+                <button><i class="material-icons scale-125">share</i></button>
+                <button class="ml-auto"><i class="material-icons scale-125">loop</i></button>
+            </div>
+            <p class="px-4 pb-2" caption>
+                It's gon be ok, ok!
+            </p>
+            <p class="font-mono text-center text-sm p-2 bg-black/50" post-date>
+                Posted on <span>3st April, 1098</span>
+            </p>
+          </div>
+      </div>
+    </p>
+{% endblock %}

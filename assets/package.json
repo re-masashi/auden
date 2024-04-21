@@ -1,0 +1,23 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i css/input.css -o ../.dist/css/output.css --watch",
+    "build": "tailwindcss -i css/input.css -o ../.dist/css/output.css --minify",
+    "esbuild": "esbuild js/app.js --bundle --outfile=../.dist/js/app.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "0.20.2",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "@hotwired/turbo": "^8.0.4",
+    "lit": "^3.1.3"
+  }
+}

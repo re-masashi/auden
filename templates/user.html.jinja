@@ -1,0 +1,81 @@
+{% extends "base.html.jinja" %}
+{% block title %}{{ username }} ({{ usertag }}){% endblock %}
+{% block content %}
+    <div class="flex flex-col pt-4 rounded-3xl font-normal p-8 items-center h-screen gap-2">
+        <img src="https://wallpapercave.com/wp/wp5609850.jpg" class="rounded-full w-48 h-48" />
+        <div class="flex flex-col gap-2  w-1/2">
+            <h1 class="text-3xl font-extrabold text-center">
+                {{ username }} ({{ usertag }})
+            </h1>
+            <p class="text-sm text-center p-2 break-words bg-white/30 rounded-xl">
+                {{ about }}
+            </p>
+        </div>
+        <h2 class="text-lg">Pronouns: <span class="font-extrabold">he/him</span></h2>
+        <div class="grid grid-cols-3 w-full px-40 h-10 gap-2">
+            <div class="mx-auto w-full h-full text-center border-b-2 border-white">Posts</div>
+            <div class="mx-auto w-full h-full text-center border-b-0 border-white">Mentions</div>
+            <div class="mx-auto w-full h-full text-center border-b-0 border-white">ReShares</div>
+        </div>
+        <div class="py-2"></div>
+        <div class="grid grid-cols-3 px-24 gap-3">
+            <div class="flex flex-col bg-black/40 p-3 rounded-xl" post>
+              <div class="p-4 pb-0 w-full" media>
+                  <img src="https://w.wallhaven.cc/full/72/wallhaven-72yzje.jpg" class="rounded-md">
+              </div>
+              <div class="flex flex-row items-center p-4 gap-3" controls>
+                  <button><i class="material-icons scale-125">favorite</i></button>
+                  <button><i class="material-icons scale-125">comment</i></button>
+                  <button><i class="material-icons scale-125">share</i></button>
+                  <button class="ml-auto"><i class="material-icons scale-125">loop</i></button>
+              </div>
+              <p class="px-4 pb-2" caption>
+                  Magic!
+                  <span class="rounded-full bg-yellow-800 px-1 p-0.5 text-xs">#beachvibes</span>
+                  <span class="rounded-full bg-green-800 px-1 p-0.5 text-xs">#peace</span>
+              </p>
+              <p class="font-mono text-center text-sm p-2 bg-black/50" post-date>
+                  Posted on <span>3st April, 1098</span>
+              </p>
+            </div>
+            <div class="flex flex-col bg-black/40 p-3 rounded-xl" post>
+              <div class="p-4 pb-0 w-full" media>
+                  <img src="https://w.wallhaven.cc/full/72/wallhaven-72yzje.jpg" class="rounded-md">
+              </div>
+              <div class="flex flex-row items-center p-4 gap-3" controls>
+                  <button><i class="material-icons scale-125">favorite</i></button>
+                  <button><i class="material-icons scale-125">comment</i></button>
+                  <button><i class="material-icons scale-125">share</i></button>
+                  <button class="ml-auto"><i class="material-icons scale-125">loop</i></button>
+              </div>
+              <p class="px-4 pb-2" caption>
+                  Magic!
+                  <span class="rounded-full bg-yellow-800 px-1 p-0.5 text-xs">#beachvibes</span>
+                  <span class="rounded-full bg-green-800 px-1 p-0.5 text-xs">#peace</span>
+              </p>
+              <p class="font-mono text-center text-sm p-2 bg-black/50" post-date>
+                  Posted on <span>3st April, 1098</span>
+              </p>
+            </div>
+            <div class="flex flex-col bg-black/40 p-3 rounded-xl" post>
+              <div class="p-4 pb-0 w-full" media>
+                  <img src="https://w.wallhaven.cc/full/72/wallhaven-72yzje.jpg" class="rounded-md">
+              </div>
+              <div class="flex flex-row items-center p-4 gap-3" controls>
+                  <button><i class="material-icons scale-125">favorite</i></button>
+                  <button><i class="material-icons scale-125">comment</i></button>
+                  <button><i class="material-icons scale-125">share</i></button>
+                  <button class="ml-auto"><i class="material-icons scale-125">loop</i></button>
+              </div>
+              <p class="px-4 pb-2" caption>
+                  Magic!
+                  <span class="rounded-full bg-yellow-800 px-1 p-0.5 text-xs">#beachvibes</span>
+                  <span class="rounded-full bg-green-800 px-1 p-0.5 text-xs">#peace</span>
+              </p>
+              <p class="font-mono text-center text-sm p-2 bg-black/50" post-date>
+                  Posted on <span>3st April, 1098</span>
+              </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

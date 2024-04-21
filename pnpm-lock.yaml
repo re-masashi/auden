@@ -1,0 +1,30 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  esbuild-serve:
+    specifier: ^1.0.1
+    version: 1.0.1
+
+packages:
+
+  /create-serve@1.0.1:
+    resolution: {integrity: sha512-cDAmBGhkwolS7ihq7SnPE8KwjYUZl5FaI9Pq5ZBwNelSKvFR9OoAA4/B5BfB/NC+eYaykBpX9RVMfuU4DHtrPw==}
+    hasBin: true
+    dev: true
+
+  /esbuild-serve@1.0.1:
+    resolution: {integrity: sha512-VvYDThNuwg+YAuZC+RqAgw9TpEVGoDdcvm2mTL0lU+TxDXr+QGZfJ+zc6m7cXeJ940qijvdTSZl3mQbRGN4/PA==}
+    dependencies:
+      create-serve: 1.0.1
+      esbuild: 0.9.7
+    dev: true
+
+  /esbuild@0.9.7:
+    resolution: {integrity: sha512-VtUf6aQ89VTmMLKrWHYG50uByMF4JQlVysb8dmg6cOgW8JnFCipmz7p+HNBl+RR3LLCuBxFGVauAe2wfnF9bLg==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
