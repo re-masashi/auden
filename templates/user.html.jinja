@@ -7,11 +7,21 @@
             <h1 class="text-3xl font-extrabold text-center">
                 {{ username }} ({{ usertag }})
             </h1>
+            <div class="grid grid-cols-2 w-full px-40 h-10 gap-2 content-center">
+                <div class="mx-auto w-full h-full text-center border-r-2 border-white">Followers: 
+                  <span class="font-extrabold">3K</span>
+                </div>
+                <div class="mx-auto w-full h-full text-center border-b-0 border-white">Following:
+                  <span class="font-extrabold">4</span>
+                </div>
+            </div>
             <p class="text-sm text-center p-2 break-words bg-white/30 rounded-xl">
                 {{ about }}
             </p>
         </div>
+
         <h2 class="text-lg">Pronouns: <span class="font-extrabold">he/him</span></h2>
+        
         <div class="grid grid-cols-3 w-full px-40 h-10 gap-2">
             <div class="mx-auto w-full h-full text-center border-b-2 border-white">Posts</div>
             <div class="mx-auto w-full h-full text-center border-b-0 border-white">Mentions</div>
